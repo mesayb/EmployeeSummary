@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar  text-white bg-danger m-0">
+        <h1>My Team</h1>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-4 offset-lg-5 ">
+                <div class="card text-white bg-primary mb-3 shadow-lg" style="max-width: 18rem;">
+                    <div class="card-header">
+                        <h5 class="card-title">${name}</h5>
+                        <p class="card-title"><i class="fas fa-laptop-code"></i> ${title}</p>
+                    </div>
+                    <div class="card-body bg-white">
+
+                        <div>ID : ${id} </div>
+                        <div>Email : ${email} </div>
+                        <div>Office Number : ${officeNumber}</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

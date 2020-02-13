@@ -1,0 +1,5 @@
+{
+    "pageTitle": "Employee Summary Test",
+    "outputPath": "output/index.html",
+    "includeFailureMsg": true
+  }
