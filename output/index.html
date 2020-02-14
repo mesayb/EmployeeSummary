@@ -8,63 +8,97 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 </head>
 
-<body>
+<body class="bg-light">
 
-    <div class="navbar  text-white bg-danger m-0">
+    <div class="navbar fixed-top text-white bg-danger m-0">
         <h1>My Team</h1>
+        <input id = "toggle" type="checkbox" checked data-toggle="toggle" data-onstyle="dark">
     </div>
 
-    <div class="container mt-4">
+    <div class="container" style="margin-top: 100px;">
         <div class="row">
             <div class="col-sm-4 ">
-<div class="card text-white bg-primary mb-3 shadow-lg" style="max-width: 18rem;">
+<div class="card text-white bg-primary mb-3 shadow-lg border rounded-lg" style="max-width: 18rem;">
     <div class="card-header">
-        <h5 class="card-title">Mesay</h5>
-        <p class="card-title"><i class="fas fa-laptop-code"></i> Manager</p>
+        <h5 class="card-title"></h5>
+        <p class="card-title"><i class="fas fa-user" style="font-size:24px"></i> Manager</p>
     </div>
-    <div class="card-body bg-white text-dark">
+    <div class="cardlist">
+    <ul class="list-group bg-white text-dark">
 
-        <div>ID : 00001 </div>
-        <div>Email : 01 </div>
-        <div>Office Number : undefined</div>
+        <li class="list-group-item"><span class="font-weight-bold">ID</span> :  </li>
+        <li class="list-group-item"><span class="font-weight-bold">Email</span> :  </li>
+        <li class="list-group-item"><span class="font-weight-bold">Office Number</span> : </li>
+    </ul>
     </div>
 </div>
 </div>
  <div class="col-sm-4 ">
-<div class="card text-white bg-primary mb-3 shadow-lg" style="max-width: 18rem;">
+<div class="card text-white bg-primary mb-3 shadow-lg border rounded-lg" style="max-width: 18rem;">
     <div class="card-header">
-        <h5 class="card-title">John</h5>
-        <p class="card-title"><i class="fas fa-laptop-code"></i> Engineer</p>
+        <h5 class="card-title"></h5>
+        <p class="card-title"><i class="fas fa-laptop" style="font-size:24px"></i> Engineer</p>
     </div>
-    <div class="card-body bg-white text-dark">
+    <div class="cardlist">
+    <ul class="list-group bg-white text-dark">
 
-        <div>ID : 0002 </div>
-        <div>Email : john@yahoo.com </div>
-        <div>Office Number : undefined</div>
+        <li class="list-group-item"><span class="font-weight-bold">ID</span> :  </li>
+        <li class="list-group-item"><span class="font-weight-bold">Email</span> :  </li>
+        <li class="list-group-item"><span class="font-weight-bold">GitHub User Name</span> : </li>
+    </ul>
     </div>
 </div>
 </div>
  <div class="col-sm-4 ">
-<div class="card text-white bg-primary mb-3 shadow-lg" style="max-width: 18rem;">
+<div class="card text-white bg-primary mb-3 shadow-lg border rounded-lg" style="max-width: 18rem;">
     <div class="card-header">
-        <h5 class="card-title">Abe</h5>
-        <p class="card-title"><i class="fas fa-laptop-code"></i> Intern</p>
+        <h5 class="card-title"></h5>
+        <p class="card-title"><i class="fas fa-laptop" style="font-size:24px"></i> Engineer</p>
     </div>
-    <div class="card-body bg-white text-dark">
+    <div class="cardlist">
+    <ul class="list-group bg-white text-dark">
 
-        <div>ID : 0003 </div>
-        <div>Email : GTech </div>
-        <div>Office Number : undefined</div>
+        <li class="list-group-item"><span class="font-weight-bold">ID</span> :  </li>
+        <li class="list-group-item"><span class="font-weight-bold">Email</span> :  </li>
+        <li class="list-group-item"><span class="font-weight-bold">GitHub User Name</span> : </li>
+    </ul>
+    </div>
+</div>
+</div>
+ <div class="col-sm-4 ">
+<div class="card text-white bg-primary mb-3 shadow-lg border rounded-lg" style="max-width: 18rem;">
+    <div class="card-header">
+        <h5 class="card-title"></h5>
+        <p class="card-title"><i class="fas fa-laptop" style="font-size:24px"></i> Engineer</p>
+    </div>
+    <div class="cardlist">
+    <ul class="list-group bg-white text-dark">
+
+        <li class="list-group-item"><span class="font-weight-bold">ID</span> :  </li>
+        <li class="list-group-item"><span class="font-weight-bold">Email</span> :  </li>
+        <li class="list-group-item"><span class="font-weight-bold">GitHub User Name</span> : </li>
+    </ul>
     </div>
 </div>
 </div>
 
         </div>
     </div>
-
+<script>
+$(document).ready(function(){
+    $(".toggle").click(function(){
+      $("body").toggleClass('bg-dark');
+      $(".card").toggleClass('card text-white bg-danger mb-3 shadow-lg border rounded-lg  mb-3 card');
+    });
+  });
+</script>
 </body>
 
 </html>
