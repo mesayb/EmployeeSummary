@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "jest --verbose test/*",
-    "testCI": "set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter"
+    "test:CI": "set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter"
   },
   "repository": {
     "type": "git",

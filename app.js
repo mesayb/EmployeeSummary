@@ -46,10 +46,6 @@ async function cardForEachRole() {
         cards += createCards(int.getName(), int.getRole(), int.getId(), int.getEmail(), int.getSchool());
 
     })
-
-
-
-
 }
 
 async function genFile(html) {
@@ -58,7 +54,6 @@ async function genFile(html) {
             console.log('Error Generating file')
         }
     })
-
 }
 
 function createCards(name, title, id, email, rand) {
@@ -100,5 +95,3 @@ function createCards(name, title, id, email, rand) {
 };
 
 callCordinator();
-
-
