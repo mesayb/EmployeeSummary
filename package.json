@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "jest --verbose test/*",
-    "test:CI": "set CI=true &&react-scripts test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter"
+
+    "test-coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",

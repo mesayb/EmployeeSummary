@@ -49,7 +49,7 @@ async function cardForEachRole() {
 }
 
 async function genFile(html) {
-    fs.writeFile('./output/index.html', html, function (err) {
+    fs.writeFile('./output/team.html', html, function (err) {
         if (err) {
             console.log('Error Generating file')
         }
