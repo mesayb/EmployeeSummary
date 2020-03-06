@@ -1,14 +1,24 @@
 # Employee Summary
 
-## Description
-Employee Summary generator is a command line application, which can be used to create a nicely formatted webpage. The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns. When the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user. 
-
- This application has unit tests integrated.
-
+Command line application to generate software engineering team profile.
 
 ## Installation
-Clone to your local machine and open in your favorite code editor to check it out!
 
-## Technologies Utilized
-HTML5, Bootstrap 4, JavaScript, Node.js, Inquirer node module
+Install dependencies using ``` npm-install``` or ``` npm-i```
 
+To start using the app use :
+
+```bash
+'node app.js'
+```
+[Deployed App can be found on Heroku](https://dashboard.heroku.com/apps/employee-summary)
+
+## Usage
+ The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns.
+
+   The application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user
+
+![](EmployeeSummaryGif2.gif)
+
+## Tools Used
+HTML5, Bootstrap 4, JavaScript, Node.js, Inquirer node module,Jest, jest-html-reporter 
